@@ -43,6 +43,8 @@ resource "aws_vpn_connection" "ipsec1" {
 depends_on = ["aws_vpn_gateway.vpn","aws_vpn_gateway.shared_vpn"]
 #  transit_gateway_id = "${aws_ec2_transit_gateway.my-test-tgw.id}"
 vpn_gateway_id      = "${aws_vpn_gateway.vpn.id}"
+tunnel1_preshared_key = "${var.tun1_key1}"
+tunnel2_preshared_key = "${var.tun1_key2}"
   customer_gateway_id = "${aws_customer_gateway.cust_gw11.id}"
   static_routes_only  = "false"
   tunnel1_inside_cidr = "${var.tun1_cidr1}"

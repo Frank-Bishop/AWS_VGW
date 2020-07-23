@@ -59,6 +59,13 @@ default = "169.254.255.8/30"
 variable "tun2_cidr2" {
 default = "169.254.255.12/30"
 }
+variable "tun1_key1" {
+default = "asdlknfkanlkansflk"
+}
+variable "tun1_key2" {
+default = "sdlafelfnkefnjkbjb"
+}
+
 
 
 
