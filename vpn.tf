@@ -58,6 +58,10 @@ for_each = var.VPNS
 
 
 output "cgw-ids" {
+    value = [for u in aws_customer_gateway.cust_gw:u.id]
+}
+
+output "cgw-ips" {
     value = {
 	for u in aws_customer_gateway.cust_gw:
 	u.id => u.ip_address 
@@ -70,6 +74,10 @@ output "cgw-bgp-asn" {
 	for u in aws_customer_gateway.cust_gw:
 	u.id => u.bgp_asn 
     }
+}
+
+output "vpn-ids" {
+    value = [for u in aws_vpn_connection.ipsec:u.id]
 }
 
 output "vpn-tunnel1-adress" {
