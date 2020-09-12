@@ -44,15 +44,15 @@ This is a basic TF Template for
 
 | Name | Description |
 |------|-------------|
-| cgw-bgp-asn | n/a |
-| cgw-ids | n/a |
-| cgw-ips | n/a |
-| vpn-ids | n/a |
-| vpn-tunnel1-adress | n/a |
-| vpn-tunnel1-bgp-asn | n/a |
-| vpn-tunnel1-inside-cgw-address | n/a |
-| vpn-tunnel1-inside-vgw-address | n/a |
-| vpn-tunnel2-adress | n/a |
-| vpn-tunnel2-bgp-asn | n/a |
-| vpn-tunnel2-inside-cgw-address | n/a |
-| vpn-tunnel2-inside-vgw-address | n/a |
+| cgw-bgp-asn | return a list of ASN associated to each CGW |
+| cgw-ids | return a list of CGW-IDs |
+| cgw-ips | return a list of IPs associated to each CGWs |
+| vpn-ids | return a list of VPN-IDs |
+| vpn-tunnel1-adress | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
+| vpn-tunnel1-bgp-asn | list of tunnel1 ASN associated to each VPN connection |
+| vpn-tunnel1-inside-cgw-address | list of IPs: CGW tunnel1 intside IP address associated to each VPN connection |
+| vpn-tunnel1-inside-vgw-address | list of IPs: VGW tunnel1 inside IP address associated to each VPN connection |
+| vpn-tunnel2-adress | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
+| vpn-tunnel2-bgp-asn | list of tunnel2 ASN associated to each VPN connection |
+| vpn-tunnel2-inside-cgw-address | list of IPs: CGW tunnel2 inside IP address associated to each VPN connection |
+| vpn-tunnel2-inside-vgw-address | list of IPs: VGW tunnel2 inside IP address associated to each VPN connection |

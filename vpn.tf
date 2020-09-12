@@ -59,6 +59,7 @@ for_each = var.VPNS
 
 output "cgw-ids" {
     value = [for u in aws_customer_gateway.cust_gw:u.id]
+    description = "return a list of CGW-IDs"
 }
 
 output "cgw-ips" {
@@ -66,6 +67,7 @@ output "cgw-ips" {
 	for u in aws_customer_gateway.cust_gw:
 	u.id => u.ip_address 
     }
+    description = "return a list of IPs associated to each CGWs"
 }
 
 output "cgw-bgp-asn" {
@@ -73,10 +75,12 @@ output "cgw-bgp-asn" {
 	for u in aws_customer_gateway.cust_gw:
 	u.id => u.bgp_asn 
     }
+    description = "return a list of ASN associated to each CGW"
 }
 
 output "vpn-ids" {
     value = [for u in aws_vpn_connection.ipsec:u.id]
+    description = "return a list of VPN-IDs"
 }
 
 output "vpn-tunnel1-adress" {
@@ -84,14 +88,16 @@ output "vpn-tunnel1-adress" {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel1_address
     }
+    description = "list of IPs: AWS tunnel2 outside IP address associated to each VPN connection"
+
 }
 
 output "vpn-tunnel2-adress" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel2_address
-
     }
+    description = "list of IPs: AWS tunnel2 outside IP address associated to each VPN connection"
 }
 
 
@@ -99,46 +105,46 @@ output "vpn-tunnel1-inside-cgw-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel1_cgw_inside_address
-
     }
+    description = "list of IPs: CGW tunnel1 intside IP address associated to each VPN connection"
 }
 
 output "vpn-tunnel1-inside-vgw-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel1_vgw_inside_address
-
     }
+    description = "list of IPs: VGW tunnel1 inside IP address associated to each VPN connection"
 }
 
 output "vpn-tunnel2-inside-cgw-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel2_cgw_inside_address
-
     }
+    description = "list of IPs: CGW tunnel2 inside IP address associated to each VPN connection"
 }
 
 output "vpn-tunnel2-inside-vgw-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel2_vgw_inside_address
-
     }
+    description = "list of IPs: VGW tunnel2 inside IP address associated to each VPN connection"
 }
 
 output "vpn-tunnel1-bgp-asn" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel1_bgp_asn
-
     }
+    description = "list of tunnel1 ASN associated to each VPN connection"
 }
 output "vpn-tunnel2-bgp-asn" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel2_bgp_asn
-
     }
+    description = "list of tunnel2 ASN associated to each VPN connection"
 }
 
