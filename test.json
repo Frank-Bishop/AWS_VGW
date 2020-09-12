@@ -1,0 +1,51 @@
+{
+    "VpnConnectionId": "",
+    "VpnTunnelOutsideIpAddress": "",
+    "TunnelOptions": {
+        "TunnelInsideCidr": "",
+        "TunnelInsideIpv6Cidr": "",
+        "PreSharedKey": "",
+        "Phase1LifetimeSeconds": 28800,
+        "Phase2LifetimeSeconds": 3600,
+        "RekeyMarginTimeSeconds": 60,
+        "RekeyFuzzPercentage": 0,
+        "ReplayWindowSize": 1024,
+        "DPDTimeoutSeconds": 30,
+        "Phase1EncryptionAlgorithms": [
+            {
+                "Value": "AES256"
+            }
+        ],
+        "Phase2EncryptionAlgorithms": [
+            {
+                "Value": "AES256"
+            }
+        ],
+        "Phase1IntegrityAlgorithms": [
+            {
+                "Value": "SHA1"
+            }
+        ],
+        "Phase2IntegrityAlgorithms": [
+            {
+                "Value": "SHA1"
+            }
+        ],
+        "Phase1DHGroupNumbers": [
+            {
+                "Value": 14
+            }
+        ],
+        "Phase2DHGroupNumbers": [
+            {
+                "Value": 14
+            }
+        ],
+        "IKEVersions": [
+            {
+                "Value": "ikev2"
+            }
+        ]
+    },
+    "DryRun": false
+}

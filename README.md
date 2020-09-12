@@ -1,14 +1,14 @@
-# AWS TGW Playground
+# AWS VGW Playground
 This is a basic TF Template for 
- - main and shared VPC creation (+ innstances)
+ - App VPC creation
  - VGW Creation
  - VGW and VPN tunnel associations
  - 2 security group 
  - 2 private subnet per VPC
  - 2 routing table (Main,PRIVATE)
  - VPN GW with 2 private subnet
- - 2 vpn connection (4x IPsec) to On-prem connectivity
- - AWS Customer gateway creation
+ - 4x CGW (AWS Customer Gateway)
+ - 4 vpn connection (8x IPsec) to On-prem connectivity
  - 4byte ASN for TGW and VGW
 
 ## Requirements
