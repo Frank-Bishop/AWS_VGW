@@ -68,7 +68,6 @@ output "cgw-ips" {
     }
 }
 
-
 output "cgw-bgp-asn" {
     value = {
 	for u in aws_customer_gateway.cust_gw:
