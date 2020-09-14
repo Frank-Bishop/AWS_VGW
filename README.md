@@ -46,18 +46,21 @@ This is a basic TF Template for
 
 ## Outputs
 
+
 | Name | Description |
 |------|-------------|
 | cgw-bgp-asn | return a list of ASN associated to each CGW |
 | cgw-ids | return a list of CGW-IDs |
 | cgw-ips | return a list of IPs associated to each CGWs |
-| vpn-cgw-mappings | list, display how the VPNs associated to CGWs |
+| cgw-name-tags | return a list of Name tags associated to each CGWs |
 | vpn-ids | return a list of VPN-IDs |
-| vpn-tunnel1-adress | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
+| vpn-name-mappings | list, display how the VPNs associated to CGWs |
+| vpn-name-tags | list, display VPN Connection Name tags |
+| vpn-tunnel1-address | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
 | vpn-tunnel1-bgp-asn | list of tunnel1 ASN associated to each VPN connection |
 | vpn-tunnel1-inside-cgw-address | list of IPs: CGW tunnel1 intside IP address associated to each VPN connection |
 | vpn-tunnel1-inside-vgw-address | list of IPs: VGW tunnel1 inside IP address associated to each VPN connection |
-| vpn-tunnel2-adress | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
+| vpn-tunnel2-address | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
 | vpn-tunnel2-bgp-asn | list of tunnel2 ASN associated to each VPN connection |
 | vpn-tunnel2-inside-cgw-address | list of IPs: CGW tunnel2 inside IP address associated to each VPN connection |
 | vpn-tunnel2-inside-vgw-address | list of IPs: VGW tunnel2 inside IP address associated to each VPN connection |
