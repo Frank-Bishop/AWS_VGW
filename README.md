@@ -12,6 +12,10 @@ This is a basic TF Template for
  - 4byte ASN for TGW and VGW
 
 ## Requirements
+
+
+
+
 | Name | Version |
 |------|---------|
 | terraform | >= 0.12 |
@@ -47,6 +51,7 @@ This is a basic TF Template for
 | cgw-bgp-asn | return a list of ASN associated to each CGW |
 | cgw-ids | return a list of CGW-IDs |
 | cgw-ips | return a list of IPs associated to each CGWs |
+| vpn-cgw-mappings | list, display how the VPNs associated to CGWs |
 | vpn-ids | return a list of VPN-IDs |
 | vpn-tunnel1-adress | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
 | vpn-tunnel1-bgp-asn | list of tunnel1 ASN associated to each VPN connection |
