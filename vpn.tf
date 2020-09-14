@@ -62,6 +62,15 @@ output "cgw-ids" {
     description = "return a list of CGW-IDs"
 }
 
+output "cgw-name-tags" {
+    value = {
+	for u in aws_customer_gateway.cust_gw:
+	u.id => u.tags.Name 
+    }
+    description = "return a list of Name tags associated to each CGWs"
+}
+
+
 output "cgw-ips" {
     value = {
 	for u in aws_customer_gateway.cust_gw:
@@ -83,10 +92,18 @@ output "vpn-ids" {
     description = "return a list of VPN-IDs"
 }
 
-output "vpn-cgw-mappings" {
+output "vpn-name-tags" {
     value = {
 	for u in aws_vpn_connection.ipsec:
-	u.id => u.customer_gateway_id
+	u.id => u.customer_gateway_id 
+    }
+    description = "list, display VPN Connection Name tags"
+}
+
+output "vpn-name-mappings" {
+    value = {
+	for u in aws_vpn_connection.ipsec:
+	u.id => u.tags.Name 
     }
     description = "list, display how the VPNs associated to CGWs"
 }
