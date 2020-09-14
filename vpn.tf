@@ -100,12 +100,12 @@ output "vpn-cgw-mappings" {
     description = "list, display VPN Connection Name tags"
 }
 
-output "vpn-name-mappings" {
+output "vpn-name-tags" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tags.Name 
     }
-    description = "list, display how the VPNs associated to CGWs"
+    description = "return a list of Name tags associated to each VPNs"
 }
 
 output "vpn-tunnel1-address" {
