@@ -53,9 +53,9 @@ This is a basic TF Template for
 | cgw-ids | return a list of CGW-IDs |
 | cgw-ips | return a list of IPs associated to each CGWs |
 | cgw-name-tags | return a list of Name tags associated to each CGWs |
+| vpn-cgw-mappings | list, display VPN Connection Name tags |
 | vpn-ids | return a list of VPN-IDs |
 | vpn-name-mappings | list, display how the VPNs associated to CGWs |
-| vpn-name-tags | list, display VPN Connection Name tags |
 | vpn-tunnel1-address | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |
 | vpn-tunnel1-bgp-asn | list of tunnel1 ASN associated to each VPN connection |
 | vpn-tunnel1-inside-cgw-address | list of IPs: CGW tunnel1 intside IP address associated to each VPN connection |
@@ -64,3 +64,4 @@ This is a basic TF Template for
 | vpn-tunnel2-bgp-asn | list of tunnel2 ASN associated to each VPN connection |
 | vpn-tunnel2-inside-cgw-address | list of IPs: CGW tunnel2 inside IP address associated to each VPN connection |
 | vpn-tunnel2-inside-vgw-address | list of IPs: VGW tunnel2 inside IP address associated to each VPN connection |
+

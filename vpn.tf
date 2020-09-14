@@ -92,7 +92,7 @@ output "vpn-ids" {
     description = "return a list of VPN-IDs"
 }
 
-output "vpn-name-tags" {
+output "vpn-cgw-mappings" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.customer_gateway_id 
