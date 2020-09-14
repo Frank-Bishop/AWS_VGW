@@ -53,7 +53,7 @@ This is a basic TF Template for
 | cgw-ids | return a list of CGW-IDs |
 | cgw-ips | return a list of IPs associated to each CGWs |
 | cgw-name-tags | return a list of Name tags associated to each CGWs |
-| vpn-cgw-mappings | list, display VPN Connection Name tags |
+| vpn-cgw-mappings | return a list, how the VPNs are mapped to CGWs |
 | vpn-ids | return a list of VPN-IDs |
 | vpn-name-tags | return a list of Name tags associated to each VPNs |
 | vpn-tunnel1-address | list of IPs: AWS tunnel2 outside IP address associated to each VPN connection |

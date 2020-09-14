@@ -97,7 +97,7 @@ output "vpn-cgw-mappings" {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.customer_gateway_id 
     }
-    description = "list, display VPN Connection Name tags"
+    description = "return a list, how the VPNs are mapped to CGWs"
 }
 
 output "vpn-name-tags" {
