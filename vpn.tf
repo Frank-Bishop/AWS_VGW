@@ -108,7 +108,7 @@ output "vpn-name-mappings" {
     description = "list, display how the VPNs associated to CGWs"
 }
 
-output "vpn-tunnel1-adress" {
+output "vpn-tunnel1-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel1_address
@@ -117,7 +117,7 @@ output "vpn-tunnel1-adress" {
 
 }
 
-output "vpn-tunnel2-adress" {
+output "vpn-tunnel2-address" {
     value = {
 	for u in aws_vpn_connection.ipsec:
 	u.id => u.tunnel2_address
