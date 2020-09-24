@@ -44,13 +44,14 @@ resource "aws_subnet" "main-private-2" {
 #    }
 #}
 
-resource "aws_vpn_gateway" "vpn" {
-  amazon_side_asn = "4294967292"
-  tags = {
-    Env  = "AWS_native"
-    Name = "main-vpn-gateway"
-  }
-}
+#resource "aws_vpn_gateway" "vpn" {
+#  amazon_side_asn = "4294967292"
+#  vpc_id         = aws_vpc.main.id
+#  tags = {
+#    Env  = "AWS_native"
+#    Name = "main-vpn-gateway"
+#  }
+#}
 
 resource "aws_vpn_gateway_attachment" "vpn_attachment" {
   vpc_id         = aws_vpc.main.id
@@ -61,6 +62,7 @@ resource "aws_vpn_gateway_attachment" "vpn_attachment" {
 resource "aws_route_table" "main-private" {
   depends_on = [aws_vpn_gateway.vpn]
   vpc_id     = aws_vpc.main.id
+
   route {
     cidr_block = var.vpn_cidr
     gateway_id = aws_vpn_gateway.vpn.id

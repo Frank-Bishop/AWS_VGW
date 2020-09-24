@@ -51,7 +51,9 @@ variable "VPNS" {
     }
 }
 
-
+variable "ENV" {
+  default = "DEV"
+}
 
 variable "AWS_REGION" {
   default = "eu-central-1"

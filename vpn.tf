@@ -1,4 +1,13 @@
 
+resource "aws_vpn_gateway" "vpn" {
+  amazon_side_asn = "4294967292"
+#  vpc_id         = aws_vpc.main.id
+  tags = {
+    Env  = "AWS_native"
+    Name = "main-vpn-gateway"
+  }
+}
+
 #resource "aws_customer_gateway" "cust_gw22" {
 #  bgp_asn    = var.on_prem_asn
 #  ip_address = var.cgw4_ip
@@ -32,9 +41,10 @@ for_each = var.VPNS
   #  tunnel2_inside_cidr = "${var.tun1_cidr2}"
   type = "ipsec.1"
   tags = {
-    Env  = "AWS_native"
-    Name = each.value.name
-  }
+    Env  = "${var.ENV}"
+#    Name = "${var.ENV}"-each.value.name
+     Name = format("%s-%s", var.ENV, each.value.name)
+}
 }
 
 
@@ -55,6 +65,12 @@ for_each = var.VPNS
 #    Name = "vpn_connection4"
 #  }
 #}
+
+
+output "vgw-id" {
+    value =  aws_vpn_gateway.vpn.id
+    description = "return a VGW-ID"
+}
 
 
 output "cgw-ids" {

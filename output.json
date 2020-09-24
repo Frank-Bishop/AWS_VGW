@@ -1,0 +1,272 @@
+{
+  "cgw-bgp-asn": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "cgw-00a41fd5f4d74f68f": "number",
+        "cgw-0480e101cf36ab271": "number",
+        "cgw-07c7adc009795c91a": "number",
+        "cgw-0d0a81d9a3f444c69": "number"
+      }
+    ],
+    "value": {
+      "cgw-00a41fd5f4d74f68f": 65412,
+      "cgw-0480e101cf36ab271": 65412,
+      "cgw-07c7adc009795c91a": 65412,
+      "cgw-0d0a81d9a3f444c69": 65412
+    }
+  },
+  "cgw-ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "cgw-0d0a81d9a3f444c69",
+      "cgw-00a41fd5f4d74f68f",
+      "cgw-0480e101cf36ab271",
+      "cgw-07c7adc009795c91a"
+    ]
+  },
+  "cgw-ips": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "cgw-00a41fd5f4d74f68f": "string",
+        "cgw-0480e101cf36ab271": "string",
+        "cgw-07c7adc009795c91a": "string",
+        "cgw-0d0a81d9a3f444c69": "string"
+      }
+    ],
+    "value": {
+      "cgw-00a41fd5f4d74f68f": "2.2.3.4",
+      "cgw-0480e101cf36ab271": "3.2.3.4",
+      "cgw-07c7adc009795c91a": "4.2.3.4",
+      "cgw-0d0a81d9a3f444c69": "1.2.3.4"
+    }
+  },
+  "cgw-name-tags": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "cgw-00a41fd5f4d74f68f": "string",
+        "cgw-0480e101cf36ab271": "string",
+        "cgw-07c7adc009795c91a": "string",
+        "cgw-0d0a81d9a3f444c69": "string"
+      }
+    ],
+    "value": {
+      "cgw-00a41fd5f4d74f68f": "cgw2-dc1-cisco2",
+      "cgw-0480e101cf36ab271": "cgw3-dc2-cisco1",
+      "cgw-07c7adc009795c91a": "cgw4-dc2-cisco2",
+      "cgw-0d0a81d9a3f444c69": "cgw1-dc1-cisco1"
+    }
+  },
+  "vpn-cgw-mappings": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "cgw-07c7adc009795c91a",
+      "vpn-061f1019ea06bc722": "cgw-0d0a81d9a3f444c69",
+      "vpn-06be350113784e995": "cgw-00a41fd5f4d74f68f",
+      "vpn-0e4c76bec7e6fbfb3": "cgw-0480e101cf36ab271"
+    }
+  },
+  "vpn-ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "vpn-061f1019ea06bc722",
+      "vpn-06be350113784e995",
+      "vpn-0e4c76bec7e6fbfb3",
+      "vpn-03d3bdcbb366db22e"
+    ]
+  },
+  "vpn-name-tags": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "vpn4-dc2-cisco2",
+      "vpn-061f1019ea06bc722": "vpn1-dc1-cisco1",
+      "vpn-06be350113784e995": "vpn2-dc1-cisco2",
+      "vpn-0e4c76bec7e6fbfb3": "vpn3-dc2-cisco1"
+    }
+  },
+  "vpn-tunnel1-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "18.192.64.210",
+      "vpn-061f1019ea06bc722": "3.121.145.78",
+      "vpn-06be350113784e995": "18.197.216.205",
+      "vpn-0e4c76bec7e6fbfb3": "18.157.241.157"
+    }
+  },
+  "vpn-tunnel1-bgp-asn": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "4294967292",
+      "vpn-061f1019ea06bc722": "4294967292",
+      "vpn-06be350113784e995": "4294967292",
+      "vpn-0e4c76bec7e6fbfb3": "4294967292"
+    }
+  },
+  "vpn-tunnel1-inside-cgw-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "169.254.127.110",
+      "vpn-061f1019ea06bc722": "169.254.38.134",
+      "vpn-06be350113784e995": "169.254.183.202",
+      "vpn-0e4c76bec7e6fbfb3": "169.254.141.54"
+    }
+  },
+  "vpn-tunnel1-inside-vgw-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "169.254.127.109",
+      "vpn-061f1019ea06bc722": "169.254.38.133",
+      "vpn-06be350113784e995": "169.254.183.201",
+      "vpn-0e4c76bec7e6fbfb3": "169.254.141.53"
+    }
+  },
+  "vpn-tunnel2-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "52.59.118.36",
+      "vpn-061f1019ea06bc722": "52.59.160.30",
+      "vpn-06be350113784e995": "35.159.35.33",
+      "vpn-0e4c76bec7e6fbfb3": "35.158.248.19"
+    }
+  },
+  "vpn-tunnel2-bgp-asn": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "4294967292",
+      "vpn-061f1019ea06bc722": "4294967292",
+      "vpn-06be350113784e995": "4294967292",
+      "vpn-0e4c76bec7e6fbfb3": "4294967292"
+    }
+  },
+  "vpn-tunnel2-inside-cgw-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "169.254.201.58",
+      "vpn-061f1019ea06bc722": "169.254.234.154",
+      "vpn-06be350113784e995": "169.254.86.58",
+      "vpn-0e4c76bec7e6fbfb3": "169.254.46.206"
+    }
+  },
+  "vpn-tunnel2-inside-vgw-address": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "vpn-03d3bdcbb366db22e": "string",
+        "vpn-061f1019ea06bc722": "string",
+        "vpn-06be350113784e995": "string",
+        "vpn-0e4c76bec7e6fbfb3": "string"
+      }
+    ],
+    "value": {
+      "vpn-03d3bdcbb366db22e": "169.254.201.57",
+      "vpn-061f1019ea06bc722": "169.254.234.153",
+      "vpn-06be350113784e995": "169.254.86.57",
+      "vpn-0e4c76bec7e6fbfb3": "169.254.46.205"
+    }
+  }
+}
