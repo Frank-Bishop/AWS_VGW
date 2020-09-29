@@ -29,6 +29,7 @@ for_each = var.CGWS
   }
 }
 
+
 resource "aws_vpn_connection" "ipsec" {
   depends_on = [aws_vpn_gateway.vpn]
 for_each = var.VPNS
@@ -44,7 +45,7 @@ for_each = var.VPNS
     Env  = "${var.ENV}"
 #    Name = "${var.ENV}"-each.value.name
      Name = format("%s-%s", var.ENV, each.value.name)
-}
+    }
 }
 
 

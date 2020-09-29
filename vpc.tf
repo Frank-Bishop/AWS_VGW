@@ -53,6 +53,11 @@ resource "aws_subnet" "main-private-2" {
 #  }
 #}
 
+resource "aws_vpn_gateway_route_propagation" "vpn_propagation" {
+  vpn_gateway_id = aws_vpn_gateway.vpn.id
+  route_table_id = aws_route_table.main-private.id
+}
+
 resource "aws_vpn_gateway_attachment" "vpn_attachment" {
   vpc_id         = aws_vpc.main.id
   vpn_gateway_id = aws_vpn_gateway.vpn.id

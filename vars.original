@@ -26,26 +26,26 @@ variable "VPNS" {
   default = {
     "VPN1" = {
       "name"       = "vpn1-dc1-cisco1"
-      "tunnel_key1"    = "12341234"
-      "tunnel_key2"    = "567856781234"
+      "tunnel_key1"    = "VPN1_tunnel1_preshared_key"
+      "tunnel_key2"    = "VPN1_tunnel2_preshared_key"
     "cgw" = "CGW1"
     },
     "VPN2" = {
       "name"       = "vpn2-dc1-cisco2"
-      "tunnel_key1"    = "9101112341234"
-      "tunnel_key2"    = "12131412341234"
+      "tunnel_key1"    = "VPN2_tunnel1_preshared_key"
+      "tunnel_key2"    = "VPN2_tunnel2_preshared_key"
     "cgw" = "CGW2"
     },
     "VPN3" = {
       "name"       = "vpn3-dc2-cisco1"
-      "tunnel_key1"    = "123456789101112"
-      "tunnel_key2"    = "123456789101112"
+      "tunnel_key1"    = "VPN3_tunnel1_preshared_key"
+      "tunnel_key2"    = "VPN3_tunnel2_preshared_key"
     "cgw" = "CGW3"
     },
     "VPN4" = {
       "name"       = "vpn4-dc2-cisco2"
-      "tunnel_key1"    = "123456789101112"
-      "tunnel_key2"    = "123456789101112"
+      "tunnel_key1"    = "VPN4_tunnel1_preshared_key"
+      "tunnel_key2"    = "VPN4_tunnel2_preshared_key"
     "cgw" = "CGW4"
     },
     }

@@ -11,6 +11,8 @@ This is a basic TF Template for
  - 4 vpn connection (8x IPsec) to On-prem connectivity
  - 4byte ASN for TGW and VGW
 
+Added simple pkeys.sh which replace the preshared keys in the vars.tf.
+
 ## Requirements
 
 
